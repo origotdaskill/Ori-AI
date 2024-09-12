@@ -100,7 +100,7 @@
 
 <svelte:head>
 	<title>
-		{`${$WEBUI_NAME}`}
+		Mediatopea AI
 	</title>
 </svelte:head>
 
@@ -142,7 +142,7 @@
 						<div>
 							{$i18n.t('Signing in')}
 							{$i18n.t('to')}
-							{$WEBUI_NAME}
+							Mediatopea AI
 						</div>
 
 						<div>
@@ -162,12 +162,12 @@
 							<div class=" text-2xl font-medium">
 								{mode === 'signin' ? $i18n.t('Sign in') : $i18n.t('Sign up')}
 								{$i18n.t('to')}
-								{$WEBUI_NAME}
+								Mediatopea AI
 							</div>
 
 							{#if mode === 'signup'}
 								<div class=" mt-1 text-xs font-medium text-gray-500">
-									ⓘ {$WEBUI_NAME}
+									ⓘ Mediatopea AI
 									{$i18n.t(
 										'does not make any external connections, and your data stays securely on your locally hosted server.'
 									)}

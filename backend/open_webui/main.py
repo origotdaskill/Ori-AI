@@ -1964,7 +1964,7 @@ async def get_app_config(request: Request):
 
     return {
         "status": True,
-        "name": WEBUI_NAME,
+        "name": "MediaTopea AI",
         "version": VERSION,
         "default_locale": str(DEFAULT_LOCALE),
         "oauth": {
@@ -2261,8 +2261,8 @@ async def oauth_callback(provider: str, request: Request, response: Response):
 @app.get("/manifest.json")
 async def get_manifest_json():
     return {
-        "name": WEBUI_NAME,
-        "short_name": WEBUI_NAME,
+        "name": "MediaTopea AI",
+        "short_name": "MediaTopea AI",
         "start_url": "/",
         "display": "standalone",
         "background_color": "#343541",
@@ -2288,8 +2288,8 @@ async def get_manifest_json():
 async def get_opensearch_xml():
     xml_content = rf"""
     <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-    <ShortName>{WEBUI_NAME}</ShortName>
-    <Description>Search {WEBUI_NAME}</Description>
+    <ShortName>{"MediaTopea AI"}</ShortName>
+    <Description>Search {"MediaTopea AI"}</Description>
     <InputEncoding>UTF-8</InputEncoding>
     <Image width="16" height="16" type="image/x-icon">{WEBUI_URL}/static/favicon.png</Image>
     <Url type="text/html" method="get" template="{WEBUI_URL}/?q={"{searchTerms}"}"/>

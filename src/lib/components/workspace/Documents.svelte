@@ -180,7 +180,7 @@
 
 <svelte:head>
 	<title>
-		{$i18n.t('Documents')} | {$WEBUI_NAME}
+		{$i18n.t('Documents')} | {"MediaTopea AI"}
 	</title>
 </svelte:head>
 

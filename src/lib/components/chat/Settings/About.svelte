@@ -47,7 +47,7 @@
 		<div>
 			<div class=" mb-2.5 text-sm font-medium flex space-x-2 items-center">
 				<div>
-					{$WEBUI_NAME}
+					MediaTopea AI
 					{$i18n.t('Version')}
 				</div>
 			</div>
@@ -130,8 +130,8 @@
 		</div>
 
 		<div class="mt-2 text-xs text-gray-400 dark:text-gray-500">
-			{#if !$WEBUI_NAME.includes('Open WebUI')}
-				<span class=" text-gray-500 dark:text-gray-300 font-medium">{$WEBUI_NAME}</span> -
+			{#if !$WEBUI_NAME.includes('MediaTopea AI')}
+				<span class=" text-gray-500 dark:text-gray-300 font-medium">MediaTopea AI</span> -
 			{/if}
 			{$i18n.t('Created by')}
 			<a
