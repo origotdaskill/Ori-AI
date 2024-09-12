@@ -198,6 +198,133 @@ If you have any questions, suggestions, or need assistance, please open an issue
   </picture>
 </a>
 
----
 
-Created by [Timothy J. Baek](https://github.com/tjbck) - Let's make MediaTopea AI even more amazing together! 💪
+
+# Install from Open WebUI Github Repo
+==========================
+
+## Info
+---------
+
+MediaTopea AI consists of two primary components: the frontend and the backend (which serves as a reverse proxy, handling static frontend files, and additional features). Both need to be running concurrently for the development environment.
+
+## Requirements
+-------------
+
+* Node.js >= 20.10
+* Python >= 3.11
+
+## Build and Install
+------------------
+
+### For Linux/macOS
+
+#### Clone the Repository
+
+```bash
+git clone https://github.com/origotdaskill/Ori-AI.git
+```
+
+#### Change into the Project Directory
+
+```bash
+cd Ori-AI/
+```
+
+#### Copy the .env File
+
+```bash
+cp -RPp .env.example .env
+```
+
+#### Install Dependencies and Build the Frontend
+
+```bash
+npm install
+npm run build
+```
+
+#### Change into the Backend Directory
+
+```bash
+cd ./backend
+```
+
+#### Create and Activate a Conda Environment (Optional)
+
+```bash
+conda create --name open-webui-env python=3.11
+conda activate open-webui-env
+```
+
+#### Install Dependencies with Pip
+
+```bash
+pip install -r requirements.txt -U
+```
+
+#### Start the Application
+
+```bash
+bash start.sh
+```
+
+### For Windows
+
+#### Clone the Repository
+
+```bash
+git clone https://github.com/origotdaskill/Ori-AI.git
+```
+
+#### Change into the Project Directory
+
+```bash
+cd Ori-AI
+```
+
+#### Copy the .env File
+
+```bash
+copy .env.example .env
+```
+
+#### Install Dependencies and Build the Frontend
+
+```bash
+npm install
+npm run build
+```
+
+#### Change into the Backend Directory
+
+```bash
+cd .\backend
+```
+
+#### Create and Activate a Conda Environment (Optional)
+
+```bash
+conda create --name open-webui-env python=3.11
+conda activate open-webui-env
+```
+
+#### Install Dependencies with Pip
+
+```bash
+pip install -r requirements.txt -U
+```
+
+#### Start the Application
+
+```bash
+start.bat
+```
+
+## Running Open WebUI
+--------------------
+
+You should have Open WebUI up and running at `http://localhost:8080/`. Enjoy!
+
+
+
