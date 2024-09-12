@@ -200,7 +200,7 @@ If you have any questions, suggestions, or need assistance, please open an issue
 
 
 
-# Install from Open WebUI Github Repo
+# Install from MediaTopea AI Github Repo
 ==========================
 
 ## Info
